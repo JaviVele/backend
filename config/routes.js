@@ -68,7 +68,7 @@ module.exports.routes = {
     'DELETE /notificaciones/:id': 'NotificacionesController.eliminar',
 
     //RUTAS DE MENSAJES//
-    'POST /mensaje': 'MensajesController.crear',
+    'POST /mensajes': 'MensajesController.crear',
     'POST /comprobarMensajes': 'MensajesController.listar',
     'DELETE /mensajes/:id': 'MensajesController.eliminar',
 
