@@ -83,7 +83,7 @@ module.exports = {
     
       listar: async function (req, res) {
         try {
-          const publi = await Publicacion.find();
+          const publi = await Publicacion.find().sort('fecha_publicacion ASC');
           res.json(publi);
         } catch (error) {
           res.status(500).json({ error: 'Error al obtener la lista de publicaciones' });
